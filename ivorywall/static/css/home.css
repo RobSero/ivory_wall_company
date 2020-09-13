@@ -1,0 +1,39 @@
+.page-container {
+background-color: aqua;
+}
+
+.main-banner {
+  height: 600px;
+}
+
+.info-section {
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+.break {
+  height: 200px;
+}
+
+.break-large {
+  padding: 130px;
+  text-align: center;
+}
+
+.flex-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-profiles-item {
+  width: 40%;
+  margin: 10px;
+  min-width: 350px;
+}
+
+.profile-img {
+  width: 250px;
+}
+
