@@ -1,0 +1,25 @@
+p {
+  color: red
+}
+
+.gallery-img {
+  width: 300px;
+}
+
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.gallery-flex-item {
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 200px;
+}

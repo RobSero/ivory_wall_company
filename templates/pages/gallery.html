@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+Gallery page
+
+<div class="gallery-flex">
+
+  {% for item in context.items %}
+  <div class="gallery-flex-item" style="background-image: url('{{item.image_url}}')">
+    <p>{{item.name}}</p>
+  </div>
+  
+
+  {% endfor %}
+
+</div>
+
+
+
+{% endblock %}
