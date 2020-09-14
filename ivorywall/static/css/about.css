@@ -1,0 +1,51 @@
+.about-flex-banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.about-flex-item {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.about-main-img {
+  width: 500px;
+  height: 500px;
+}
+
+.about-details-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(63, 37, 75);
+  padding: 10px;
+  color: white;
+}
+
+.details-flex-item {
+  width: 250px;
+  text-align: center;
+  margin: 5px;
+}
+
+.detail-img {
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-flex-item {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .about-main-img {
+    width: 300px;
+    height: 300px;
+  }
+  }
