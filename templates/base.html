@@ -18,10 +18,11 @@
   />
 </head>
 <body>
+
   <div class="animate__animated  popup-message" id="message-area">
     <h1>Message us</h1>
     <p>Send us an equiry about what you would like and we will be happy to help</p>
-    <form>
+    <form action="{% url 'message' %}" method="POST"> {% csrf_token %}
     <label class="message-label">Full Name</label>
     <input class="message-input" type="text" name="name" />
     <br />
@@ -40,16 +41,16 @@
   </div>
 
     <!-- NAV BAR - DESKTOP -->
-    <nav class="r-nav-container">
+    <nav class="r-nav-container nav-format">
       <p class="r-nav-link"><a href="{% url 'products' %}">Products</a></p>
       <p class="r-nav-link"><a href="{% url 'about' %}">About</a></p>
-      <p class="r-main-title"><a href="{% url 'home' %}"><img class="main-img" src="{% static 'images/ivory.jpg' %}" /></a></p>
+    <a href="{% url 'home' %}"><img style="vertical-align:middle" class="main-img" src="{% static 'images/ivory.jpg' %}" /></a>
       <p class="r-nav-link"><a href="{% url 'gallery' %}">Gallery</a></p>
       <p class="r-nav-link" id="message-button">Contact</p>
     </nav>
   
     <!-- NAV BAR - MOBILE -->
-    <nav class="m-nav-container">
+    <nav class="m-nav-container nav-format">
       <a href="{% url 'home' %}"><img class="main-img m-main-title" src="{% static 'images/ivory.jpg' %}" /></a>
       <img src="{% static 'assets/pngwave (21).png' %}" class="burger-button" id="dropdown-toggle" />
     </nav>
@@ -59,6 +60,11 @@
       <p class="m-nav-link"><a href="{% url 'gallery' %}">Gallery</a></p>
       <p class="m-nav-link" id="message-button">Contact</p>
     </div>
+    {% if messages %}
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
 
 
 

@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .forms import MessageForm
+from django.contrib import messages
+from django.http import JsonResponse
 
 # Create your views here.
 def homepage(req):
@@ -44,3 +47,13 @@ def gallerypage(req):
   }
   
   return render(req, 'pages/gallery.html',{'context' : context})
+
+def messageSend(req):
+  print(req.POST)
+  message = MessageForm(req.POST)
+  if message.is_valid():
+    print('YEAH VALID')
+    messages.success(req, 'WOOOOO DONE IT')
+  messages.error(req, 'FAIL IN THE MAIL')
+  print(message.errors)
+  return JsonResponse({'success':'yoyoyo'})
