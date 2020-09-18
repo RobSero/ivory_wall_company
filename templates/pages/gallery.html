@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-Gallery page
-
+<div class="gallery-container">
+<div class="gallery-header-section">
+<h2 class="gallery-header">We serves all Occasions</h2>
+<p class="gallery-subheader">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere natus adipisci ratione facilis quidem recusandae, reiciendis eveniet molestias nesciunt</p>
+</div>
 <div class="gallery-flex">
 
   {% for item in context.items %}
@@ -15,6 +18,6 @@ Gallery page
 
 </div>
 
-
+</div>
 
 {% endblock %}

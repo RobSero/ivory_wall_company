@@ -1,5 +1,26 @@
-p {
-  color: red
+.gallery-container {
+  display: block;
+  height: 100vh;
+  background-image: url('../images/test.png');
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gallery-header-section {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.gallery-header {
+  font-size: 3rem;
+}
+
+.gallery-subheader {
+  font-size: 1.5rem;
 }
 
 .gallery-img {

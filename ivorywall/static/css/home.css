@@ -1,5 +1,7 @@
 .page-container {
-background-color: aqua;
+background-image: url('../images/Gold_Coast_Flower_Darling03.png');
+background-size: contain;
+background-attachment: fixed;
 }
 
 .main-banner {
@@ -7,7 +9,7 @@ background-color: aqua;
 }
 
 .info-section {
-  padding: 50px;
+  padding: 50px 300px;
   background-color: white;
   text-align: center;
 }
@@ -37,3 +39,14 @@ background-color: aqua;
   width: 250px;
 }
 
+.info-header {
+  font-size: 3rem;
+}
+
+.info-text {
+  font-size: 1.5rem;
+}
+
+.profile-text {
+  font-size: 1.5rem;
+}

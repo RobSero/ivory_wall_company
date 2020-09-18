@@ -20,26 +20,24 @@
 <body>
 
   <div class="animate__animated  popup-message" id="message-area">
-    <h1>Message us</h1>
-    <p>Send us an equiry about what you would like and we will be happy to help</p>
+    <div class="form-area">
+      <p id='message-exit'>X</p>
+    <h1 class="form-header">Message us</h1>
+    <p class="form-subheader">Send us an equiry about what you would like and we will be happy to help</p>
     <form action="{% url 'message' %}" method="POST"> {% csrf_token %}
-    <label class="message-label">Full Name</label>
-    <input class="message-input" type="text" name="name" />
+    <input class="message-input" type="text" name="name" placeholder="Full Name" />
     <br />
-    <label class="message-label">Mobile Number</label>
-    <input class="message-input" type="text" name="mobile" />
+    <input class="message-input" type="text" name="mobile" placeholder="Mobile Number" />
     <br />
-    <label class="message-label">Email</label>
-    <input class="message-input" type="email" name="email" />
+    <input class="message-input" type="email" name="email" placeholder="Email" />
     <br />
-    <label class="message-label">Message</label>
-    <textarea class="message-input" name="message" rows='5'></textarea>
+    <textarea class="message-input" name="message" rows='5' placeholder="Message"></textarea>
     <br />
-    <button type="submit">Send</button>
-    <p id='message-exit'>X</p>
+    <button class="form-submit" type="submit">Send</button>
+    
   </form>
   </div>
-
+</div>
     <!-- NAV BAR - DESKTOP -->
     <nav class="r-nav-container nav-format">
       <p class="r-nav-link"><a href="{% url 'products' %}">Products</a></p>
