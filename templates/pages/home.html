@@ -4,10 +4,15 @@
 {% load static %}
 <div class="page-container">
   <div class="main-banner">
-
+    <img src="{% static 'images/ivory.jpg' %}" alt="banner-image" class="banner-item-main"/>
+    <img src="{% static 'images/ivory.jpg' %}" alt="banner-image" class="banner-item-main"/>
+    <img src="{% static 'images/ivory.jpg' %}" alt="banner-image" class="banner-item-main"/>
   </div>
   <div class="info-section">
-    <h2 class="info-header">The finest flower walls to hire in Essex</h2>
+    <img class="product-section-decoration" src="{% static 'images/flowerLayer.png' %}" alt="flower image" />
+    <h2 class="product-section-header">Locations</h2>
+        <h3 class="product-section-subheader">No Hassle</h3>
+        <hr class="location-line deco-line-style" />
     <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima necessitatibus veritatis nihil sit excepturi
       sequi inventore nemo enim, sapiente, amet libero harum perspiciatis magnam perferendis. Tenetur nesciunt
       consequuntur perspiciatis quaerat.</p>
@@ -20,7 +25,10 @@
   <div class="break"></div>
 
   <div class="info-section">
-    <h2 class="info-header">The finest flower walls to hire in Essex</h2>
+    <img class="product-section-decoration" src="{% static 'images/flowerLayer.png' %}" alt="flower image" />
+    <h2 class="product-section-header">Locations</h2>
+        <h3 class="product-section-subheader">No Hassle</h3>
+        <hr class="location-line deco-line-style" />
     <div class="flex-profiles">
       <div class="flex-profiles-item">
         <img class="profile-img" src="{% static 'images/ivory.jpg' %}" alt="aimee" />
@@ -37,4 +45,5 @@
     <a href="{% url 'products' %}">See our work</a>
   </div>
 </div>
+<script src="{% static 'js/fixednavbar.js' %}"></script>
 {% endblock %}

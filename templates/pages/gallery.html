@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div class="gallery-container">
 <div class="gallery-header-section">
-<h2 class="gallery-header">We serves all Occasions</h2>
-<p class="gallery-subheader">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere natus adipisci ratione facilis quidem recusandae, reiciendis eveniet molestias nesciunt</p>
+  <img class="product-section-decoration" src="{% static 'images/flowerLayer.png' %}" alt="flower image" />
+  <h2 class="product-section-header">Locations</h2>
+      <h3 class="product-section-subheader">No Hassle</h3>
+      <hr class="location-line deco-line-style" />
+<p class="r-subheader">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere natus adipisci ratione facilis quidem recusandae, reiciendis eveniet molestias nesciunt</p>
 </div>
 <div class="gallery-flex">
 
@@ -19,5 +22,5 @@
 </div>
 
 </div>
-
+<script src="{% static 'js/fixednavbar.js' %}"></script>
 {% endblock %}

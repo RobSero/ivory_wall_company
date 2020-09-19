@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: 50%;
   margin-top: -20px ;
+  padding-top: 100px;
 }
 
 .about-flex-banner {
@@ -26,6 +27,14 @@
 .about-main-img {
   width: 500px;
   height: 500px;
+  border-radius: 50%;
+}
+
+.product-item-text {
+  width: 100%;
+  min-width: 200px;
+  /* background-color: white; */
+  padding: 30px 60px;
 }
 
 .about-details-flex {
@@ -45,8 +54,52 @@
 }
 
 .detail-img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.detail-title {
+  font-size: 2.5rem;
+}
+
+.detail-line {
+  width: 70%;
+}
+
+.detail-text {
+  font-size: 2rem;
+}
+
+.about-intro {
+padding: 3rem;
+}
+
+.covered-locations {
+  text-align: center;
+  padding: 50px;
+}
+
+.location-line {
+  width: 20%;
+}
+
+.location-map {
+  height: 500px;
+}
+
+.about-footer-area {
+  padding: 130px;
+  text-align: center;
+}
+
+.margin-deep {
+  padding-top: 150px;
+}
+
+.about-break-section {
+  height: 50px;
+  background-color: rgb(63, 37, 75);
 }
 
 @media only screen and (max-width: 1000px) {

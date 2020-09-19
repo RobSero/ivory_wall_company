@@ -1,44 +1,82 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div class="about-container">
-<div class="about-flex-banner">
-  <div class="about-flex-item">
-    <h1>Who we are</h1>
-    <h2>We will make your event blossum</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati culpa incidunt ratione velit, exercitationem
-      dolores tempore, vel similique laudantium harum dolorem cupiditate! Doloremque quis temporibus debitis autem!
-      Quam, dolorem nesciunt.</p>
-  </div>
-  <img src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg'
-    alt="flower image" class="about-main-img" />
-</div>
-
-<div class="about-details-flex">
-  <div class="details-flex-item">
-    <img class="detail-img"
-      src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg' />
-    <h5>Fast delivery</h5>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde, fuga eum, facere aperiam officiis incidunt
-    </p>
+  <div class="about-flex-banner">
+    <div class="about-flex-item">
+      <div class="about-item-text">
+        <img class="product-section-decoration" src="{% static 'images/flowerLayer.png' %}" alt="flower image" />
+        <h2 class="product-section-header">Weddings</h2>
+        <h3 class="product-section-subheader">No Hassle</h3>
+        <hr class="header-line" />
+        <p class="product-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae sequi
+          tempore temporibus, voluptates
+          assumenda quasi molestias magni explicabo, eveniet fuga corporis, itaque vitae dolorem! Alias placeat
+          obcaecati a
+          necessitatibus!</p>
+      </div>
+    </div>
+    <img src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg'
+      alt="flower image" class="about-main-img" />
   </div>
 
-  <div class="details-flex-item">
-    <img class="detail-img"
-      src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg' />
-    <h5>Fast delivery</h5>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde, fuga eum, facere aperiam officiis incidunt
-    </p>
-  </div>
+  <div class="about-details-flex">
+    <div class="details-flex-item">
+      <img class="detail-img"
+        src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg' />
+      <h5 class="detail-title">Fast delivery</h5>
+      <hr class="detail-line deco-line-style-2" />
+      <p class="detail-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde, fuga eum, facere
+        aperiam officiis incidunt
+      </p>
+    </div>
 
-  <div class="details-flex-item">
-    <img class="detail-img"
-      src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg' />
-    <h5>Fast delivery</h5>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde, fuga eum, facere aperiam officiis incidunt
-    </p>
-  </div>
+    <div class="details-flex-item">
+      <img class="detail-img"
+        src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg' />
+      <h5 class="detail-title">Fast delivery</h5>
+      <hr class="detail-line deco-line-style-2" />
+      <p class="detail-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde, fuga eum, facere
+        aperiam officiis incidunt
+      </p>
+    </div>
 
-</div>
+    <div class="details-flex-item">
+      <img class="detail-img"
+        src='https://res.cloudinary.com/dy7eycl8m/image/upload/v1591820610/2_2018-Fox-Network-Upfront_g8jxwy.jpg' />
+      <h5 class="detail-title">Fast delivery</h5>
+      <hr class="detail-line deco-line-style-2" />
+      <p class="detail-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde, fuga eum, facere
+        aperiam officiis incidunt
+      </p>
+    </div>
+
+  </div>
+  <div class="covered-locations">
+    <img class="product-section-decoration" src="{% static 'images/flowerLayer.png' %}" alt="flower image" />
+    <h2 class="product-section-header">Locations</h2>
+        <h3 class="product-section-subheader">No Hassle</h3>
+        <hr class="location-line deco-line-style" />
+        <div class="about-flex-banner">
+          <div class="about-flex-item">
+            <div class="about-item-text">
+
+              <p class="product-section-text margin-deep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae sequi
+                tempore temporibus, voluptates
+                assumenda quasi molestias magni explicabo, eveniet fuga corporis, itaque vitae dolorem! Alias placeat
+                obcaecati a
+                necessitatibus!</p>
+            </div>
+          </div>
+          <img src="{% static 'images/flowermap.png' %}"
+            alt="flower image" class="location-map" />
+        </div>
+  </div>
+  <div class="about-break-section">
+
+  </div>
+  <div class="about-footer-area">
+    <button>See our work</button>
+  </div>
 </div>
 {% endblock %}

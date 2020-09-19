@@ -9,6 +9,8 @@ a {
   color: white;
   text-align: center;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .title-nav-container {

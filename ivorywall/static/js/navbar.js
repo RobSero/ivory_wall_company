@@ -27,3 +27,8 @@ contactCloseButton.addEventListener('click', ()=> {
     contactPopUp.style.display = 'none'
   },1000)
 })
+
+
+
+
+

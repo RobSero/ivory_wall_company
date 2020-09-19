@@ -5,7 +5,15 @@ background-attachment: fixed;
 }
 
 .main-banner {
-  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 150px;
+}
+
+.banner-item-main {
+  border-radius: 50%;
+  height: 300px;
 }
 
 .info-section {
