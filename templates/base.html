@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,57 +13,45 @@
   <link rel="stylesheet" href="{% static 'css/products.css' %}">
   <link rel="stylesheet" href="{% static 'css/navstyle.css' %}">
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
 
-  <div class="animate__animated  popup-message" id="message-area">
-    <div class="form-area">
-      <p id='message-exit'>X</p>
-    <h1 class="form-header">Message us</h1>
-    <p class="form-subheader">Send us an equiry about what you would like and we will be happy to help</p>
-    <form action="{% url 'message' %}" method="POST"> {% csrf_token %}
-    <input class="message-input" type="text" name="name" placeholder="Full Name" />
-    <br />
-    <input class="message-input" type="text" name="mobile" placeholder="Mobile Number" />
-    <br />
-    <input class="message-input" type="email" name="email" placeholder="Email" />
-    <br />
-    <textarea class="message-input" name="message" rows='5' placeholder="Message"></textarea>
-    <br />
-    <button class="form-submit" type="submit">Send</button>
-    
-  </form>
-  </div>
-</div>
-    <!-- NAV BAR - DESKTOP -->
-    <nav class="r-nav-container nav-format" id="r-nav-container">
-      <p class="r-nav-link"><a href="{% url 'products' %}">Products</a></p>
-      <p class="r-nav-link"><a href="{% url 'about' %}">About</a></p>
-    <a href="{% url 'home' %}"><img style="vertical-align:middle" class="main-img" src="{% static 'images/ivory.jpg' %}" /></a>
-      <p class="r-nav-link"><a href="{% url 'gallery' %}">Gallery</a></p>
-      <p class="r-nav-link" id="message-button">Contact</p>
-    </nav>
-  
-    <!-- NAV BAR - MOBILE -->
-    <nav class="m-nav-container nav-format">
-      <a href="{% url 'home' %}"><img class="main-img m-main-title" src="{% static 'images/ivory.jpg' %}" /></a>
-      <img src="{% static 'assets/pngwave (21).png' %}" class="burger-button" id="dropdown-toggle" />
-    </nav>
-    <div class="m-nav-dropdown" id="mobile-dropdown">
-      <p class="m-nav-link"><a href="{% url 'products' %}">Products</a></p>
-      <p class="m-nav-link"><a href="{% url 'about' %}">About</a></p>
-      <p class="m-nav-link"><a href="{% url 'gallery' %}">Gallery</a></p>
-      <p class="m-nav-link" id="message-button">Contact</p>
-    </div>
-    {% if messages %}
-        {% for message in messages %}
-        <p>{{ message }}</p>
-        {% endfor %}
-    {% endif %}
+  <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header pull-left">
+            <a href="" class="navbar-brand">
+                <span class="brand-logo"><img src="images/logo.png" alt=""/></span>
+            </a>
+        </div>
+        <div class="main-nav pull-right">
+            <div class="button_container toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div><!-- /container -->
+</nav>
+
+
+
+  {% if messages %}
+  {% for message in messages %}
+  <p>{{ message }}</p>
+  {% endfor %}
+  {% endif %}
 
 
 
@@ -78,9 +67,10 @@
 
 
   <footer class="footer-main">
-<p>Copyright 2020</p>
-<p>The Ivory Wall Company</p>
+    <p>Copyright 2020</p>
+    <p>The Ivory Wall Company</p>
   </footer>
   <script src="{% static 'js/navbar.js' %}"></script>
 </body>
+
 </html>
