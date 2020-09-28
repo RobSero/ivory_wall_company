@@ -4,6 +4,12 @@ html {
   background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
 }
 
+body {
+  background: transparent;
+  border: 20px #669999 solid;
+  -webkit-font-smoothing: antialiased;
+}
+
 .footer-main {
   text-align: center;
   padding: 10px;
