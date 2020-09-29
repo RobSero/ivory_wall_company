@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+      
+<div class="container">
+  <div class="row">
+    <div class="line-symbol2"></div>
+  </div>
+</div>
+
+
+
+{% if messages %}
+<div class="messages-popup">
+    {% for message in messages %}
+    <p id="message-note">{{ message }}</p>
+    {% endfor %}
+</div>
+{% endif %}
+
+     <!-- Contact info -->
+     <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-5 contact-margin wow fadeInUp animated">
+          <h2 class="contact-heading">CONTACT US
+          <span>Phone: 212-333-4000</span>
+          <img src="images/photo10.jpg" alt=""/>
+          </h2>
+        </div>
+        <div class="col-md-7 col-sm-7 contact-margin">
+          <p class="text-contact">We would love to hear about your upcoming events with us and hope that we can offer you all the support to make it spectacular. Please get in touch to let us know and we would be happy to discuss your requirements.
+</p> 
+<form method="POST"> {% csrf_token %}
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Name:</label>
+                          <input name='name' type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                      </div>
+                  </div>
+                 
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Email:</label>
+                          <input name='email' type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                      </div>
+                  </div>
+                  <div class="control-group form-group">
+                      <div class="controls">
+                          <label>Message:</label>
+                          <textarea name='message' rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                      </div>
+                  </div>
+                  <div id="success"></div>
+                  <button type="submit" class="contact-btn btn">Send Message</button>
+              </form>
+        </div>
+      </div>
+   </div>
+
+      
+   <div class="container" id='margin-bottom'>
+    <div class="row">
+      <div class="line-symbol2"></div>
+    </div>
+</div>
+
+{% endblock %}
