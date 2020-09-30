@@ -1,13 +1,13 @@
 import os
-import environ
+# import environ
 import django_heroku
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
-# reading .env file
-environ.Env.read_env()
+# env = environ.Env(
+#     # set casting, default value
+#     DEBUG=(bool, False)
+# )
+# # reading .env file
+# environ.Env.read_env()
 
 
 
@@ -22,8 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 ALLOWED_HOSTS = []
-SECRET_KEY = env('SECRET_KEY')
-DEBUG = env('DEBUG')
+SECRET_KEY=2#dn5hf&b0p_2@x5*-k^e7@avz46#3(mu_y@b-m0xtbsv0cf9c
+DEBUG=True
 
 # Application definition
 
