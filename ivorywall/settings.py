@@ -1,5 +1,7 @@
 import os
 import environ
+import django_heroku
+
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
@@ -124,3 +126,4 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+django_heroku.settings(locals()) 
